@@ -102,7 +102,7 @@
                         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                     </GridPane.margin>
                 </Label>
-                <DatePicker GridPane.columnIndex="1" GridPane.rowIndex="1">
+                <DatePicker fx:id="datumRodjenja" GridPane.columnIndex="1" GridPane.rowIndex="1">
                     <GridPane.margin>
                         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                     </GridPane.margin>
@@ -212,7 +212,7 @@
                         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                     </GridPane.margin>
                 </CheckBox>
-            <Button fx:id="upisBtn" mnemonicParsing="false" prefHeight="25.0" prefWidth="453.0" text="Upis" GridPane.columnSpan="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="5" GridPane.vgrow="ALWAYS">
+            <Button fx:id="upisBtn" mnemonicParsing="false" prefHeight="25.0" prefWidth="453.0" text="Potvrdi" GridPane.columnSpan="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="5" GridPane.vgrow="ALWAYS">
                <GridPane.margin>
                   <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                </GridPane.margin>
