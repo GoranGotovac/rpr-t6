@@ -179,7 +179,8 @@ public class Controller {
             }
         }
         int L = 11 - ((7*( (n.charAt(0)-'0') + (n.charAt(6)-'0')) + 6*( (n.charAt(1)-'0') + (n.charAt(7)-'0')) + 5*((n.charAt(2)-'0')+ (n.charAt(8)-'0')) + 4*((n.charAt(3)- '0') + (n.charAt(9)-'0')) +3*((n.charAt(4)-'0') + n.charAt(10)-'0') + 2*((n.charAt(5)-'0') + (n.charAt(11)-'0'))) % 11);
-        if((L>=1 && L<=9) && n.charAt(12)-'0' == L) return true;
+        if((L>=1 && L<=9) && n.charAt(12)-'0' == L) {jmbgValidan=true; return true; }
+        jmbgValidan=false;
         return false;
 
     }
