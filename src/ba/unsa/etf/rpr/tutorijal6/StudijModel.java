@@ -1,4 +1,4 @@
-package sample;
+package ba.unsa.etf.rpr.tutorijal6;
 
 import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.SimpleObjectProperty;
