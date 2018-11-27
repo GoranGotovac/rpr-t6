@@ -103,7 +103,7 @@ public class Controller {
         kontaktMailField.textProperty().addListener(new ChangeListener<String>() {
             @Override
             public void changed(ObservableValue<? extends String> observableValue, String o, String n) {
-                if (validanMail(n)) {
+                if (isValidEmail(n)) {
                     kontaktMailField.getStyleClass().removeAll("poljeNijeIspravno");
                     kontaktMailField.getStyleClass().add("poljeIspravno");
                 } else {
@@ -130,13 +130,14 @@ public class Controller {
                 if (validanDatum(n)) {
                     datumRodjenja.getStyleClass().removeAll("poljeNijeIspravno");
                     datumRodjenja.getStyleClass().add("poljeIspravno");
+                    emailValidan=true;
                 } else {
                     datumRodjenja.getStyleClass().removeAll("poljeIspravno");
                     datumRodjenja.getStyleClass().add("poljeNijeIspravno");
+                    emailValidan=false;
                 }
             }
         });
-
     }
     public void promjenaKnjige(ActionEvent actionEvent) {
         model.setTrenutnoMjestoRodjenja(izborMjestaRodjenja.getValue());
@@ -180,11 +181,6 @@ public class Controller {
         }
         jmbgValidan = true;
         return !n.trim().isEmpty();
-    }
-    private boolean validanMail(String n) {
-        for (int i = 0; i < n.length(); i++) if (n.charAt(i) == '@') { emailValidan= true; return true; }
-        emailValidan = false;
-        return false;
     }
     private boolean validanIndex(String n) {
         if(n.length()!=5 || n.charAt(0) == '0') {indeksValidan = false; return false; }

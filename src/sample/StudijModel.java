@@ -30,8 +30,8 @@ public class StudijModel {
     }
 
     public void dodajStudij() {
-        studij.add(new Studij("1"));
-        studij.add(new Studij("2"));
-        studij.add(new Studij("3"));
+        studij.add(new Studij("Prva"));
+        studij.add(new Studij("Druga"));
+        studij.add(new Studij("Treća"));
     }
 }

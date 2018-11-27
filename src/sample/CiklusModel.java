@@ -32,5 +32,6 @@ public class CiklusModel {
         ciklus.add(new Ciklus("Bachelor studij"));
         ciklus.add(new Ciklus("Master studij"));
         ciklus.add(new Ciklus("Doktorski studij"));
+        ciklus.add(new Ciklus("Stručni studij"));
     }
 }
